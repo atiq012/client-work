@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/*header image*/
+
+.bg-header {
+    background-image: url(../../asset/images/1.jpg);
+    height: 665px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-header::before {
+    position: absolute;
+    content: '';
+    border-bottom: 100px solid white;
+    border-right: 680px solid transparent;
+    border-left: 0;
+    bottom: 0;
+    top: 86%;
+  }
+  
+  .bg-header::after {
+    position: absolute;
+    content: '';
+    border-bottom: 100px solid white;
+    border-left: 680px solid transparent;
+    border-right: 0;
+    bottom: 0;
+    top: 86%;
+    right: 0;
+  }
+
+/*header logo*/
+
+.logo{
+	float: left;
+    background: #ec890f;
+    color: white;
+    width: 45px;
+    padding: 20px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/*header navbar*/
+
+.navbar {
+    float:right;
+    ul{
+        li{
+            list-style: none;
+            float: left;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            background: #F8EAEA; /* for browsers that don't understand the following rgba rule */
+            background-color: rgba(248,234,234,0.2);
+            font-weight: bold;
+            color: #BDACAC /*{d-bup-color}*/;
+            a{
+                text-decoration: none;
+                color: white; 
+            }
+        }
+    }
+}
+
+.navbar ul li:hover, .navbar ul li a:hover{
+	background:white;
+	color:#878787;
+	transition: 0.5s;
+}
+
+
+
+.navbar-2 {
+    float:right;
+    ul{
+        li {
+            list-style: none;
+            float: left;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            background: #c7c7c7;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 10px;
+            color: #BDACAC;
+            box-shadow: 0px 5px 5px #efefef;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.navbar-2 ul li:hover, .navbar-2 ul li a:hover{
+    background:white;
+    color:#878787;
+    transition: 0.5s;
+}
